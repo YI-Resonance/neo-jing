@@ -4,24 +4,46 @@
     <meta charset="UTF-8">
     <title>七色路雙律</title>
     <style>
-        /* 共用相同的 CSS */
         body { font-family: "Microsoft JhengHei", "PingFang TC", sans-serif; line-height: 1.8; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fffaf0; }
         h1 { text-align: center; color: #2c3e50; }
         .poem-section { text-align: center; margin: 30px 0; font-size: 1.3em; }
-	.poem-format {text-align: left; margin: 30px 0; font-size: 1em; }
+        .poem-format { text-align: left; margin: 30px 0; font-size: 1em; }
         .poem-image { max-width: 67%; height: auto; display: block; margin: 0 auto 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
         .author-statement, .english-section { background: #fdfefe; padding: 20px; border-left: 5px solid #7f8c8d; margin: 30px 0; font-size: 1em; color: #444; text-align: left; }
         .legend-section { margin-top: 40px; text-align: center; border-top: 1px dashed #ccc; padding-top: 20px; }
         .legend-img { max-width: 100%; height: auto; display: block; margin: 10px auto; }
         .back-link { display: block; text-align: center; margin-top: 30px; margin-bottom: 50px; font-size: 1.1em; color: #2980b9; text-decoration: none; }
         .back-link:hover { text-decoration: underline; }
+        
+        /* 註釋標籤 [1]：復原為紅色、粗體、縮小、上標，並移除底線 */
         .tooltip { position: relative; display: inline-block; color: #c0392b; cursor: help; font-size: 0.8em; vertical-align: super; margin-left: 2px; font-weight: bold; }
-        .tooltip .tooltiptext { visibility: hidden; width: 400px; background-color: #fdf6e3; color: #333; text-align: left; border: 1px solid #ccc; border-radius: 6px; padding: 10px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -125px; opacity: 0; transition: opacity 0.3s; font-size: 1rem; font-weight: normal; line-height: 2; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        
+        /* 註釋方塊主體：保留 400px 寬度與 1.8 舒適行距 */
+        .tooltip .tooltiptext { visibility: hidden; width: 400px; background-color: #fdf6e3; color: #333; text-align: left; border: 1px solid #ccc; border-radius: 6px; padding: 10px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -200px; opacity: 0; transition: opacity 0.3s; font-size: 1rem; font-weight: normal; line-height: 1.8; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        
+        /* 註釋方塊：下方的倒三角形指標 */
+        .tooltip .tooltiptext::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -6px; border-width: 6px; border-style: solid; border-color: #ccc transparent transparent transparent; }
+        
+        /* 註釋方塊：隱形橋樑 (讓滑鼠可以滑進方塊內複製文字) */
+        .tooltip .tooltiptext::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 20px; 
+            background-color: transparent;
+        }
+        
+        /* 滑鼠停留時顯示方塊 */
         .tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
+        
+        /* 英文表格設定 */
         .translation-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9em; }
         .translation-table th, .translation-table td { border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; }
         .translation-table th { background-color: #f2f2f2; color: #333; }
     </style>
+
 </head>
 <body>
     <h1>七色路雙律</h1>
