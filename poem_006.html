@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <title>貧弦</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", "PingFang TC", sans-serif; line-height: 1.8; max-width: 800px; margin: 0 auto; padding: 5px; background-color: #fffaf0; }
+        h1 { text-align: center; color: #2c3e50; }
+        .poem-section { text-align: center; margin: 10px 0; font-size: 1.3em; }
+        .poem-format { text-align: left; margin: 30px 0; font-size: 1em; }
+        .poem-image { max-width: 80%; height: auto; display: block; margin: 0 auto 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .author-statement, .english-section { background: #fdfefe; padding: 20px; border-left: 5px solid #7f8c8d; margin: 30px 0; font-size: 1em; color: #444; text-align: left; }
+        .legend-section { margin-top: 40px; text-align: center; border-top: 1px dashed #ccc; padding-top: 20px; }
+        .legend-img { max-width: 100%; height: auto; display: block; margin: 10px auto; }
+        .back-link { display: block; text-align: center; margin-top: 30px; margin-bottom: 50px; font-size: 1.1em; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        
+        /* 註釋標籤 [1]：復原為紅色、粗體、縮小、上標，並移除底線 */
+        .tooltip { position: relative; display: inline-block; color: #c0392b; cursor: help; font-size: 0.8em; vertical-align: super; margin-left: 2px; font-weight: bold; }
+        
+        /* 註釋方塊主體：保留 400px 寬度與 1.8 舒適行距 */
+        .tooltip .tooltiptext { visibility: hidden; width: 400px; background-color: #fdf6e3; color: #333; text-align: left; border: 1px solid #ccc; border-radius: 6px; padding: 10px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -200px; opacity: 0; transition: opacity 0.3s; font-size: 1rem; font-weight: normal; line-height: 1.8; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        
+        /* 註釋方塊：下方的倒三角形指標 */
+        .tooltip .tooltiptext::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -6px; border-width: 6px; border-style: solid; border-color: #ccc transparent transparent transparent; }
+        
+        /* 註釋方塊：隱形橋樑 (讓滑鼠可以滑進方塊內複製文字) */
+        .tooltip .tooltiptext::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 20px; 
+            background-color: transparent;
+        }
+        
+        /* 滑鼠停留時顯示方塊 */
+        .tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
+        
+        /* 英文表格設定 */
+        .translation-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9em; }
+        .translation-table th, .translation-table td { border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; }
+        .translation-table th { background-color: #f2f2f2; color: #333; }
+    </style>
+</head>
+<body>
+    <h1>貧弦</h1>
+    
+    <div class="poem-section">
+        <img src="images/貧弦-01.png" alt="[如果未顯示圖片，請確認 poem1.jpg 已放入同資料夾]" class="poem-image">
+        <p>
+            弦琴跨世傳貧子 <span class="tooltip">[1]<span class="tooltiptext">* 達味擅長彈琴，更曾為撒烏耳彈琴驅魔。見〈撒慕爾紀上：16:14-23〉。<br><br> ** 黃家駒（1962-1993）生於香港深水埗的一個基層家庭。<br></span></span>，義抗獅熊一石枚 <span class="tooltip">[2]<span class="tooltiptext">達味向撒烏耳自薦去挑戰巨人哥肋雅時，曾以在牧羊時與獅子和狗熊對抗，證明自己的勇猛。把獅熊解為巨人哥肋雅也無不可。見〈撒慕耳紀上：17:34-51〉。</span></span>。<br>
+
+	    有憾瀛桑遺熱志 <span class="tooltip">[3]<span class="tooltiptext">瀛桑：東瀛和扶桑，日本的代稱。黃家駒於1993年6月意外死於日本。</span></span>，無聲歲月釀陳醅 <span class="tooltip">[4]<span class="tooltiptext">* 無聲歲月：可解作《歲月無聲》的倒裝，為黃家駒於1989年創作的歌曲。<br><br>  ** 陳醅：陳年而未過濾的酒；醅，粵音配恢切。</span></span>。<br>
+
+	    人悲諸葛明燈滅 <span class="tooltip">[5]<span class="tooltiptext">* 諸葛：三國時代蜀漢丞相諸葛亮（公元181-234），筆者曾以杜甫《蜀相》一詩中的「出師未捷身先死，長使英雄淚滿襟」來紀念黃家駒；<br><br>** 明燈滅：諸葛亮第五次北伐魏國時（公元234年），病死於前線，在小說《三國演義》中，他曾在臨死前施法續命，但續命燈遭部將魏延不慎踢熄；</span></span>，我羨小喬錯韻迴 <span class="tooltip"> [6]<span class="tooltiptext">* 小喬：三國時代吳國將領周瑜之妻。周瑜精於音律，能聽出奏曲者的錯誤，《三國志》中有「曲有誤，周郎顧」之說，而唐李端《聽箏》一詩中有一句「欲得周郎顧，時時誤拂弦」，寫妻子刻意把曲彈錯來逗弄丈夫。<br><br>** 此句後來發現犯了孤平之誤，但因其關於「錯韻」，故刻意保留。</span></span>！<br>
+
+	    折戟沉沙終洗鐵 <span class="tooltip">[7]<span class="tooltiptext">* 典出唐杜牧《赤壁》一詩，詩曰：
+<br><br>「折戟沉沙鐵未消，自將磨洗認前朝。
+<br>東風不與周郎便，銅雀春深鎖二喬。」
+<br><br>大意是詩人在河床上找到了赤壁之戰時的武器，感慨若然當年東風不吹，曹操就會消滅東吳，擄走美人大小二喬。</span></span>，何如聖詠樂恢恢 <span class="tooltip"> [8]<span class="tooltiptext">恢恢：寬大、廣闊的意思。
+</span></span>？
+        </p>
+	</div>
+	<div class="poem-format">
+	<p><br>體裁：七言律詩（平起首句不入韻）<br>韻部：平水韻．十灰<br>創作日期：二零二六年四月十日</p>
+    </div>
+
+    <div class="author-statement">
+        <h3>作者自述：</h3>
+        <p style="text-indent: 2em;">這是一次以後現代主義風格入近體格律詩的大膽嘗試。筆者某日忽發奇想，如果達味王看到三千年後的東方，有個熱愛音樂、立志以音樂歌唱真理，並且敢於與時代對抗的年輕人黃家駒，會否想起年少時的自己？</p>
+<p style="text-indent: 2em;">當達味王反省自己晚年的罪孽與天讉，再看到三千年後黃家駒的壯志未酬，同時想起中國歷史上「出師未捷身先死」的蜀相，還有同時代英年早逝的風流名將周瑜和他的愛妻小喬，會有什麼感想？</p>
+<p style="text-indent: 2em;">「折戟沉沙終洗鐵，何如聖詠樂恢恢？」前人悼三國群雄，總有一種「浪花淘盡英雄」、「是非成敗轉頭空」的道家情操。筆者固然認同政治軍事的功業終究被時代洗擦，然而不同於道家的淡泊，我更傾向西方的生命哲學，在荒謬的世界中，把有限的生命，化成藝術，通往不朽！</p>
+        <p style="text-indent: 2em;"></p>
+    </div>
+
+    <!--<div class="english-section">
+        <h3>English Translation</h3>
+        <h4>      </h4>
+      <table class="translation-table">
+          <tr>
+              <th width="5%">&nbsp;</th>
+                <th width="43%">Poetic Verse (Rhymed & Metrical)</th>
+                <th width="52%">Close Literal Translation</th>
+            </tr>
+            
+              <td>1</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <h4 style="margin-top: 20px;">Author's Statement:</h4>
+        <p></p>
+    <p><br>***English version is translated by Google AI.<br></p>
+    </div> --> 
+
+    <div class="legend-section">
+        <img src="圖例_2-01.png" alt="[如果未顯示圖片，請確認 圖例_2-01.jpg 已放入同資料夾]" class="legend-img">
+       
+    </div>
+
+    <a href="index.html" class="back-link">返回目錄 Back to Contents</a>
+</body>
+</html>
