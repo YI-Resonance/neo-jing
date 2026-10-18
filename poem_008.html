@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <title>腹病嘲</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", "PingFang TC", sans-serif; line-height: 1.8; max-width: 800px; margin: 0 auto; padding: 5px; background-color: #fffaf0; }
+        h1 { text-align: center; color: #2c3e50; }
+        .poem-section { text-align: center; margin: 10px 0; font-size: 1.3em; }
+        .poem-format { text-align: left; margin: 30px 0; font-size: 1em; }
+        .poem-image { max-width: 80%; height: auto; display: block; margin: 0 auto 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .author-statement, .english-section { background: #fdfefe; padding: 20px; border-left: 5px solid #7f8c8d; margin: 30px 0; font-size: 1em; color: #444; text-align: left; }
+        .legend-section { margin-top: 40px; text-align: center; border-top: 1px dashed #ccc; padding-top: 20px; }
+        .legend-img { max-width: 100%; height: auto; display: block; margin: 10px auto; }
+        .back-link { display: block; text-align: center; margin-top: 30px; margin-bottom: 50px; font-size: 1.1em; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        
+        /* 註釋標籤 [1]：復原為紅色、粗體、縮小、上標，並移除底線 */
+        .tooltip { position: relative; display: inline-block; color: #c0392b; cursor: help; font-size: 0.8em; vertical-align: super; margin-left: 2px; font-weight: bold; }
+        
+        /* 註釋方塊主體：保留 400px 寬度與 1.8 舒適行距 */
+        .tooltip .tooltiptext { visibility: hidden; width: 400px; background-color: #fdf6e3; color: #333; text-align: left; border: 1px solid #ccc; border-radius: 6px; padding: 10px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -200px; opacity: 0; transition: opacity 0.3s; font-size: 1rem; font-weight: normal; line-height: 1.8; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        
+        /* 註釋方塊：下方的倒三角形指標 */
+        .tooltip .tooltiptext::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -6px; border-width: 6px; border-style: solid; border-color: #ccc transparent transparent transparent; }
+        
+        /* 註釋方塊：隱形橋樑 (讓滑鼠可以滑進方塊內複製文字) */
+        .tooltip .tooltiptext::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 20px; 
+            background-color: transparent;
+        }
+        
+        /* 滑鼠停留時顯示方塊 */
+        .tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
+        
+        /* 英文表格設定 */
+        .translation-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9em; }
+        .translation-table th, .translation-table td { border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; }
+        .translation-table th { background-color: #f2f2f2; color: #333; }
+    </style>
+</head>
+<body>
+    <h1>腹病嘲</h1>
+    
+    <div class="poem-section">
+        <img src="images/腹病嘲-01.png" alt="[如果未顯示圖片，請確認 poem1.jpg 已放入同資料夾]" class="poem-image">
+        <p>
+            愁腸住毒蠊 <span class="tooltip">[1]<span class="tooltiptext">蠊：蜚蠊，蟑螂。</span></span>，自幼痛懨懨 <span class="tooltip">[2]<span class="tooltiptext">懨：粵音淹，病的樣子</span></span>。<br>
+
+	    本草靈丹缺 <span class="tooltip">[3]<span class="tooltiptext">本草：指《本草綱目》，明代李時珍編寫的中醫學經典。</span></span>，華陀妙手嫌 <span class="tooltip"><span class="tooltiptext"></span></span>。<br>
+
+	    查經明默示 <span class="tooltip"><span class="tooltiptext"></span></span>，噬典悟天縑 <span class="tooltip"> [4]<span class="tooltiptext">* 噬：吞的意思。此句典出〈若望默示錄：10:9-10〉。
+<br><br>** 縑：粵音兼，本意為一種絲織物，因古人會以縑為書，可借代為書；天縑：《聖經》。</span></span>，<br>
+
+	    聖慧肝脾苦 <span class="tooltip"><span class="tooltiptext"></span></span>，環身化蜜甜！<span class="tooltip"> <span class="tooltiptext"></span></span>。
+        </p>
+	</div>
+	<div class="poem-format">
+	<p><br>體裁：五言律詩（平起首句入韻）<br>韻部：平水韻．十四鹽<br>創作日期：二零二六年五月十九日</p>
+    </div>
+
+    <div class="author-statement">
+        <h3>作者自述：</h3>
+        <p style="text-indent: 2em;">靈修看〈默示錄〉到第十章吞書的異象時，忽發奇想：我由小到大腸胃都不好，是否我從小就看書太多？</p>
+        <p style="text-indent: 2em;"></p>
+    </div>
+
+    <!--<div class="english-section">
+        <h3>English Translation</h3>
+        <h4>      </h4>
+      <table class="translation-table">
+          <tr>
+              <th width="5%">&nbsp;</th>
+                <th width="43%">Poetic Verse (Rhymed & Metrical)</th>
+                <th width="52%">Close Literal Translation</th>
+            </tr>
+            
+              <td>1</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <h4 style="margin-top: 20px;">Author's Statement:</h4>
+        <p></p>
+    <p><br>***English version is translated by Google AI.<br></p>
+    </div> --> 
+
+    <div class="legend-section">
+        <img src="圖例_2-01.png" alt="[如果未顯示圖片，請確認 圖例_2-01.jpg 已放入同資料夾]" class="legend-img">
+       
+    </div>
+
+    <a href="index.html" class="back-link">返回目錄 Back to Contents</a>
+</body>
+</html>
