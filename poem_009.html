@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <title>叔能女子</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", "PingFang TC", sans-serif; line-height: 1.8; max-width: 800px; margin: 0 auto; padding: 5px; background-color: #fffaf0; }
+        h1 { text-align: center; color: #2c3e50; }
+        .poem-section { text-align: center; margin: 10px 0; font-size: 1.3em; }
+        .poem-format { text-align: left; margin: 30px 0; font-size: 1em; }
+        .poem-image { max-width: 80%; height: auto; display: block; margin: 0 auto 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .author-statement, .english-section { background: #fdfefe; padding: 20px; border-left: 5px solid #7f8c8d; margin: 30px 0; font-size: 1em; color: #444; text-align: left; }
+        .legend-section { margin-top: 40px; text-align: center; border-top: 1px dashed #ccc; padding-top: 20px; }
+        .legend-img { max-width: 100%; height: auto; display: block; margin: 10px auto; }
+        .back-link { display: block; text-align: center; margin-top: 30px; margin-bottom: 50px; font-size: 1.1em; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        
+        /* 註釋標籤 [1]：復原為紅色、粗體、縮小、上標，並移除底線 */
+        .tooltip { position: relative; display: inline-block; color: #c0392b; cursor: help; font-size: 0.8em; vertical-align: super; margin-left: 2px; font-weight: bold; }
+        
+        /* 註釋方塊主體：保留 400px 寬度與 1.8 舒適行距 */
+        .tooltip .tooltiptext { visibility: hidden; width: 400px; background-color: #fdf6e3; color: #333; text-align: left; border: 1px solid #ccc; border-radius: 6px; padding: 10px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -200px; opacity: 0; transition: opacity 0.3s; font-size: 1rem; font-weight: normal; line-height: 1.8; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        
+        /* 註釋方塊：下方的倒三角形指標 */
+        .tooltip .tooltiptext::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -6px; border-width: 6px; border-style: solid; border-color: #ccc transparent transparent transparent; }
+        
+        /* 註釋方塊：隱形橋樑 (讓滑鼠可以滑進方塊內複製文字) */
+        .tooltip .tooltiptext::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 20px; 
+            background-color: transparent;
+        }
+        
+        /* 滑鼠停留時顯示方塊 */
+        .tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
+        
+        /* 英文表格設定 */
+        .translation-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9em; }
+        .translation-table th, .translation-table td { border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; }
+        .translation-table th { background-color: #f2f2f2; color: #333; }
+    </style>
+</head>
+<body>
+    <h1>叔能女子</h1>
+    
+    <div class="poem-section">
+        <img src="images/叔能女子-01.png" alt="[如果未顯示圖片，請確認 poem1.jpg 已放入同資料夾]" class="poem-image">
+        <p>
+            命若明妃自楚荊 <span class="tooltip">[1]<span class="tooltiptext">* 明妃：王昭君的別稱。王昭君，原名王嬙，字昭君，本為漢元帝未寵宰之妃嬪，後被選為與匈奴和親的「宗室」。
+<br><br>** 楚荊：今湖北省一帶的地方，為王昭君之故鄉。</span></span>，叔能地沃艾芳盈 <span class="tooltip">[2]<span class="tooltiptext">* 關於叔能 (Shunem)這個地方，可參考<br><a href="https://jewishvirtuallibrary.org/shunem" target="_new"> https://jewishvirtuallibrary.org/shunem </a>
+<br><br>** 艾：本意為一菊科植物，漢語中常用來比喻少女。</span></span>。<br>
+
+	    聯親路冷黃沙烈 <span class="tooltip">[3]<span class="tooltiptext">聯親：和親的意思。</span></span>，侍帝床溫白玉貞 <span class="tooltip">[4]<span class="tooltiptext">達味晚年體弱發寒，臣僕替他在民間找來了美女阿彼沙格，為他暖床。然而達味並未正式寵幸過她。見〈列王紀上：1:1-4〉</span></span>。<br>
+
+	    雁下從風歸繼子 <span class="tooltip">[5]<span class="tooltiptext">* 雁：漢語中常用來借代書信。<br><br>** 從風：遵從風俗的意思。歸繼子：歸，嫁的意思。史書記載王昭君在老單于（匈奴王）呼韓邪駕崩後曾請求返歸，時任的漢成帝敕令其遵從匈奴的習俗，嫁給繼子，即復株絫若鞮單于。見《漢書·卷九十四下·匈奴傳第六十四下》。</span></span>，臺前逆母殺元兄 <span class="tooltip"> [6]<span class="tooltiptext">達味的第四子阿多尼雅曾向時任太后的巴特舍巴請求，讓撒羅滿王將阿彼沙格賜予他。巴特舍巴向撒羅滿王轉求，撒羅滿王拒絕，並把阿多尼雅殺掉。見〈列王紀上：2:13-25〉。</span></span>，<br>
+
+	    青墳或缺胡琴怨 <span class="tooltip">[7]<span class="tooltiptext">[10] 青墳：即青冢，相傳王昭君的墓長年青草長生，故曰青冢。在今內蒙古自治區呼和號特市。</span></span>，誰詠雅歌訴女情 <span class="tooltip"> [8]<span class="tooltiptext">* 女性神學學者，如台灣的林淑芬，認為〈雅歌〉是由女性所書寫的。亦有學者如Christopher W. Mitchell提出〈雅歌〉中的主角「叔拉米特」就是「叔能人阿彼沙格」。見 <a href="https://gospel.pct.org.tw/AssociatorMagazine.aspx?strTID=4&strISID=388&strMAGID=M2010071402289" target="_new">https://gospel.pct.org.tw/AssociatorMagazine.aspx?strTID=4&strISID=388&strMAGID=M2010071402289 </a> 及 <a href="https://drpdevries.com/2025/01/25/a-commentary/" target="_new">https://drpdevries.com/2025/01/25/a-commentary/</a> ，瀏覽日期：2026年5月27日。<br><br> ** 另外，這句犯了孤平之誤，第三字在格律要求中必須為平聲，或以第五字作平聲拗救，惟「雅歌」屬聖經書卷，不能易名，第五字的「訴」亦難以有其他平聲字意境相當，故此以意破律。
+</span></span>？
+        </p>
+	</div>
+	<div class="poem-format">
+	<p><br>體裁：七言律詩（仄起首句入韻）<br>韻部：平水韻．八庚<br>創作日期：二零二六年五月二十四日</p>
+    </div>
+
+    <div class="author-statement">
+        <h3>作者自述：</h3>
+        <p style="text-indent: 2em;">在讀〈列王紀〉時，忽然想起了王昭君這個女子，她與阿彼沙格一樣，都因為政治目的而下嫁老皇帝，也在老皇帝死後與繼後的兒子別有關係。某些說法說阿彼沙格後來被撒羅滿王據為己有，甚至〈雅歌〉裡的女主角叔拉米特，可能就是阿彼沙格其人，不論這是真是假，一樣為這個女子的故事，添上了傳奇與哀愁。</p>
+        <p style="text-indent: 2em;"></p>
+    </div>
+
+    <!--<div class="english-section">
+        <h3>English Translation</h3>
+        <h4>      </h4>
+      <table class="translation-table">
+          <tr>
+              <th width="5%">&nbsp;</th>
+                <th width="43%">Poetic Verse (Rhymed & Metrical)</th>
+                <th width="52%">Close Literal Translation</th>
+            </tr>
+            
+              <td>1</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <h4 style="margin-top: 20px;">Author's Statement:</h4>
+        <p></p>
+    <p><br>***English version is translated by Google AI.<br></p>
+    </div> --> 
+
+    <div class="legend-section">
+        <img src="圖例_2-01.png" alt="[如果未顯示圖片，請確認 圖例_2-01.jpg 已放入同資料夾]" class="legend-img">
+       
+    </div>
+
+    <a href="index.html" class="back-link">返回目錄 Back to Contents</a>
+</body>
+</html>
